@@ -106,14 +106,23 @@ font: 75 italic 12pt &quot;Ubuntu Condensed&quot;;</string>
        <item row="1" column="1">
         <layout class="QVBoxLayout" name="equalized_histogram_layout">
          <item>
-          <widget class="QLabel" name="label_5">
+          <widget class="QLabel" name="thershold_value">
            <property name="text">
             <string>100                                                                                 </string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSlider" name="verticalSlider">
+          <widget class="QSlider" name="threshold_value">
+           <property name="maximum">
+            <number>255</number>
+           </property>
+           <property name="singleStep">
+            <number>5</number>
+           </property>
+           <property name="value">
+            <number>100</number>
+           </property>
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
@@ -123,26 +132,6 @@ font: 75 italic 12pt &quot;Ubuntu Condensed&quot;;</string>
           <widget class="QLabel" name="label_4">
            <property name="text">
             <string>Thrshold Value</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="binarization_btn">
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>16777215</height>
-            </size>
-           </property>
-           <property name="cursor">
-            <cursorShape>PointingHandCursor</cursorShape>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">
-background-color: rgb(32, 74, 135);</string>
-           </property>
-           <property name="text">
-            <string>Binarization</string>
            </property>
           </widget>
          </item>

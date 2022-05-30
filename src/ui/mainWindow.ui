@@ -70,6 +70,7 @@ color: rgb(239, 41, 41);
     </item>
    </layout>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -85,18 +86,14 @@ color: rgb(239, 41, 41);
     </property>
     <addaction name="browse_action"/>
    </widget>
-   <widget class="QMenu" name="menuEdit">
-    <property name="title">
-     <string>Edit</string>
-    </property>
-   </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuEdit"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="browse_action">
    <property name="text">
     <string>open</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
    </property>
   </action>
   <action name="actionsave">
@@ -117,6 +114,11 @@ color: rgb(239, 41, 41);
   <action name="actionpaste">
    <property name="text">
     <string>paste</string>
+   </property>
+  </action>
+  <action name="browse_action2">
+   <property name="text">
+    <string>open</string>
    </property>
   </action>
  </widget>

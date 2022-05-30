@@ -11,18 +11,16 @@ class Page (qtw.QTabWidget):
         super().__init__()
 
         uic.loadUi("src/ui/page.ui", self)
-
-        
         self.hough_transform = hough_transform()
         self.boundary_tracing = boundary_tracing()
-
-
         self.Hough_transform_layout.addWidget(self.hough_transform)
         self.Boundray_tracing_layout.addWidget(self.boundary_tracing)
-
-    # def load_image(self, image_path):
-    #     self.filter_studio.load_original_image(image_path)
-    #     self.equalizer.load_original_image(image_path)
+        
+    def load_image(self, image_path,index):
+        if index==0:
+            self.hough_transform.load_original_image(image_path)
+        else:    
+            self.boundary_tracing.load_original_image(image_path)
         
 
         

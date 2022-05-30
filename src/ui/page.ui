@@ -7,14 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>591</width>
-    <height>324</height>
+    <height>313</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>TabWidget</string>
   </property>
   <property name="currentIndex">
-   <number>0</number>
+   <number>1</number>
   </property>
   <widget class="QWidget" name="Boundray_tracing">
    <attribute name="title">
