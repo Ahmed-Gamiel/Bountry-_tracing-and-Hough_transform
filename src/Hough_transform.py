@@ -29,9 +29,6 @@ class hough_transform(qtw.QWidget):
     def draw(self,layout,image):
         layout.draw_image(image)
  
-    # def setting_thershold_value(self):
-    #     self.thershold_value.setText(str(self.threshold_value.value()))  
-
     def binarizing_image(self):
         _,self.Gray_img_binary=cv2.threshold(self.Gray_img,self.threshold_value.value(),255,cv2.THRESH_BINARY)
         self.thershold_value.setText(str(self.threshold_value.value()))  
